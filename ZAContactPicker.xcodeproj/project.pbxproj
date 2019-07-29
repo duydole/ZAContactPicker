@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E115464222BFAB5F009FFFED /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E115464122BFAB5F009FFFED /* MyViewController.m */; };
+		E171C37122DB128B00468308 /* ZAFriendPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E171C37022DB128B00468308 /* ZAFriendPickerVC.m */; };
+		E171C37422DB18A300468308 /* ZAFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E171C37322DB18A300468308 /* ZAFriendModel.m */; };
+		E171C37622DB835900468308 /* ZAViewModelDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E171C37522DB835900468308 /* ZAViewModelDictionary.m */; };
+		E172BC4122C0D49500B19726 /* ZAFriendPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E172BC4022C0D49500B19726 /* ZAFriendPickerViewController.m */; };
+		E172BC9022C0E79B00B19726 /* ZAContactPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E172BC8F22C0E79B00B19726 /* ZAContactPickerViewController.m */; };
+		E1CB657422C3196600786B91 /* ZAModelImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CB657322C3196600786B91 /* ZAModelImageCache.m */; };
+		E1DD7F3D22C484DA008E4E85 /* ZAFriendViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DD7F3C22C484DA008E4E85 /* ZAFriendViewModel.m */; };
+		E1E3043222D4E2960041D0AD /* ZAContactViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E3043122D4E2960041D0AD /* ZAContactViewModel.m */; };
+		E1E4861E22BCB4F20035E045 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4861D22BCB4F20035E045 /* AppDelegate.m */; };
+		E1E4862122BCB4F20035E045 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4862022BCB4F20035E045 /* ViewController.m */; };
+		E1E4862422BCB4F20035E045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E4862222BCB4F20035E045 /* Main.storyboard */; };
+		E1E4862622BCB4F30035E045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E4862522BCB4F30035E045 /* Assets.xcassets */; };
+		E1E4862922BCB4F30035E045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E4862722BCB4F30035E045 /* LaunchScreen.storyboard */; };
+		E1E4862C22BCB4F30035E045 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4862B22BCB4F30035E045 /* main.m */; };
+		E1E4863622BCB4F30035E045 /* ZAContactPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4863522BCB4F30035E045 /* ZAContactPickerTests.m */; };
+		E1E4864122BCB4F30035E045 /* ZAContactPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4864022BCB4F30035E045 /* ZAContactPickerUITests.m */; };
+		E1E4865322BCB53E0035E045 /* ZAContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4865222BCB53E0035E045 /* ZAContactManager.m */; };
+		E1E4865622BCBE360035E045 /* ContactDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4865522BCBE360035E045 /* ContactDTO.m */; };
+		E1E4865A22BCC12B0035E045 /* ZAContactBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4865922BCC12B0035E045 /* ZAContactBusiness.m */; };
+		E1E4865F22BCC1D10035E045 /* ZAContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4865E22BCC1D10035E045 /* ZAContactModel.m */; };
+		E1E486AC22BCC9420035E045 /* ZAPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E486AB22BCC9420035E045 /* ZAPickerViewController.m */; };
+		E1E486AE22BCC95E0035E045 /* ZAPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E486AD22BCC95E0035E045 /* ZAPickerView.xib */; };
+		E1E486C722BCD98F0035E045 /* ZATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E486C622BCD98F0035E045 /* ZATableView.m */; };
+		E1E486CB22BCDA2A0035E045 /* ZACollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E486CA22BCDA2A0035E045 /* ZACollectionView.m */; };
+		E1E486D022BCDA5A0035E045 /* ZACollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E486CD22BCDA5A0035E045 /* ZACollectionViewCell.m */; };
+		E1E486D122BCDA5A0035E045 /* ZACollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E486CF22BCDA5A0035E045 /* ZACollectionViewCell.xib */; };
+		E1E486D522BCE33E0035E045 /* ZATableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E486D322BCE33E0035E045 /* ZATableViewCell.xib */; };
+		E1E486D622BCE33E0035E045 /* ZATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E486D422BCE33E0035E045 /* ZATableViewCell.m */; };
+		E1F9CB6D22C1EC250043626C /* ContactDeletionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F9CB6C22C1EC250043626C /* ContactDeletionVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1E4863222BCB4F30035E045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1E4861122BCB4F20035E045 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1E4861822BCB4F20035E045;
+			remoteInfo = ZAContactPicker;
+		};
+		E1E4863D22BCB4F30035E045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1E4861122BCB4F20035E045 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1E4861822BCB4F20035E045;
+			remoteInfo = ZAContactPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E115464022BFAB51009FFFED /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		E115464122BFAB5F009FFFED /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		E171C36F22DB128B00468308 /* ZAFriendPickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAFriendPickerVC.h; sourceTree = "<group>"; };
+		E171C37022DB128B00468308 /* ZAFriendPickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAFriendPickerVC.m; sourceTree = "<group>"; };
+		E171C37222DB18A300468308 /* ZAFriendModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAFriendModel.h; sourceTree = "<group>"; };
+		E171C37322DB18A300468308 /* ZAFriendModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAFriendModel.m; sourceTree = "<group>"; };
+		E171C37522DB835900468308 /* ZAViewModelDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAViewModelDictionary.m; sourceTree = "<group>"; };
+		E172BC3F22C0D48A00B19726 /* ZAFriendPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAFriendPickerViewController.h; sourceTree = "<group>"; };
+		E172BC4022C0D49500B19726 /* ZAFriendPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAFriendPickerViewController.m; sourceTree = "<group>"; };
+		E172BC8E22C0E79400B19726 /* ZAContactPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAContactPickerViewController.h; sourceTree = "<group>"; };
+		E172BC8F22C0E79B00B19726 /* ZAContactPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAContactPickerViewController.m; sourceTree = "<group>"; };
+		E1CB657222C3196600786B91 /* ZAModelImageCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAModelImageCache.h; sourceTree = "<group>"; };
+		E1CB657322C3196600786B91 /* ZAModelImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAModelImageCache.m; sourceTree = "<group>"; };
+		E1DD7F3B22C484DA008E4E85 /* ZAFriendViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAFriendViewModel.h; sourceTree = "<group>"; };
+		E1DD7F3C22C484DA008E4E85 /* ZAFriendViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAFriendViewModel.m; sourceTree = "<group>"; };
+		E1E3043022D4E2960041D0AD /* ZAContactViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAContactViewModel.h; sourceTree = "<group>"; };
+		E1E3043122D4E2960041D0AD /* ZAContactViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAContactViewModel.m; sourceTree = "<group>"; };
+		E1E3043322D4EB400041D0AD /* ZAViewModelDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAViewModelDictionary.h; sourceTree = "<group>"; };
+		E1E4861922BCB4F20035E045 /* ZAContactPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZAContactPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E4861C22BCB4F20035E045 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E1E4861D22BCB4F20035E045 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E1E4861F22BCB4F20035E045 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E1E4862022BCB4F20035E045 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E1E4862322BCB4F20035E045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1E4862522BCB4F30035E045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1E4862822BCB4F30035E045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1E4862A22BCB4F30035E045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E4862B22BCB4F30035E045 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E1E4863122BCB4F30035E045 /* ZAContactPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZAContactPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E4863522BCB4F30035E045 /* ZAContactPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAContactPickerTests.m; sourceTree = "<group>"; };
+		E1E4863722BCB4F30035E045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E4863C22BCB4F30035E045 /* ZAContactPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZAContactPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E4864022BCB4F30035E045 /* ZAContactPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAContactPickerUITests.m; sourceTree = "<group>"; };
+		E1E4864222BCB4F30035E045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E4865122BCB5330035E045 /* ZAContactManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAContactManager.h; sourceTree = "<group>"; };
+		E1E4865222BCB53E0035E045 /* ZAContactManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAContactManager.m; sourceTree = "<group>"; };
+		E1E4865422BCBE2B0035E045 /* ContactDTO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactDTO.h; sourceTree = "<group>"; };
+		E1E4865522BCBE360035E045 /* ContactDTO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDTO.m; sourceTree = "<group>"; };
+		E1E4865822BCC1150035E045 /* ZAContactBusiness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAContactBusiness.h; sourceTree = "<group>"; };
+		E1E4865922BCC12B0035E045 /* ZAContactBusiness.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAContactBusiness.m; sourceTree = "<group>"; };
+		E1E4865D22BCC1C40035E045 /* ZAContactModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAContactModel.h; sourceTree = "<group>"; };
+		E1E4865E22BCC1D10035E045 /* ZAContactModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAContactModel.m; sourceTree = "<group>"; };
+		E1E486AA22BCC9360035E045 /* ZAPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAPickerViewController.h; sourceTree = "<group>"; };
+		E1E486AB22BCC9420035E045 /* ZAPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAPickerViewController.m; sourceTree = "<group>"; };
+		E1E486AD22BCC95E0035E045 /* ZAPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZAPickerView.xib; sourceTree = "<group>"; };
+		E1E486C522BCD9830035E045 /* ZATableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZATableView.h; sourceTree = "<group>"; };
+		E1E486C622BCD98F0035E045 /* ZATableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZATableView.m; sourceTree = "<group>"; };
+		E1E486C922BCDA190035E045 /* ZACollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZACollectionView.h; sourceTree = "<group>"; };
+		E1E486CA22BCDA2A0035E045 /* ZACollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZACollectionView.m; sourceTree = "<group>"; };
+		E1E486CD22BCDA5A0035E045 /* ZACollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZACollectionViewCell.m; sourceTree = "<group>"; };
+		E1E486CE22BCDA5A0035E045 /* ZACollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZACollectionViewCell.h; sourceTree = "<group>"; };
+		E1E486CF22BCDA5A0035E045 /* ZACollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZACollectionViewCell.xib; sourceTree = "<group>"; };
+		E1E486D222BCE33E0035E045 /* ZATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZATableViewCell.h; sourceTree = "<group>"; };
+		E1E486D322BCE33E0035E045 /* ZATableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZATableViewCell.xib; sourceTree = "<group>"; };
+		E1E486D422BCE33E0035E045 /* ZATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZATableViewCell.m; sourceTree = "<group>"; };
+		E1F9CB6B22C1EC250043626C /* ContactDeletionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactDeletionVC.h; sourceTree = "<group>"; };
+		E1F9CB6C22C1EC250043626C /* ContactDeletionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDeletionVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1E4861622BCB4F20035E045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E4862E22BCB4F30035E045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E4863922BCB4F30035E045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E115463F22BFAB22009FFFED /* Test Reusibility CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				E115464022BFAB51009FFFED /* MyViewController.h */,
+				E115464122BFAB5F009FFFED /* MyViewController.m */,
+			);
+			path = "Test Reusibility CollectionView";
+			sourceTree = "<group>";
+		};
+		E171C36B22DB125100468308 /* ZAFriendPicker1 */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD7F3A22C484C2008E4E85 /* ZAFriendViewModel */,
+				E171C36F22DB128B00468308 /* ZAFriendPickerVC.h */,
+				E171C37022DB128B00468308 /* ZAFriendPickerVC.m */,
+			);
+			path = ZAFriendPicker1;
+			sourceTree = "<group>";
+		};
+		E172BC3E22C0D47400B19726 /* ZAFriendPicker2 */ = {
+			isa = PBXGroup;
+			children = (
+				E172BC3F22C0D48A00B19726 /* ZAFriendPickerViewController.h */,
+				E172BC4022C0D49500B19726 /* ZAFriendPickerViewController.m */,
+			);
+			path = ZAFriendPicker2;
+			sourceTree = "<group>";
+		};
+		E172BC8A22C0E50100B19726 /* ZAPresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E1EEC44422D1E69600D30B09 /* Utilities */,
+				E19DCEB122D4B5440072B19C /* ViewModels */,
+				E1CB657622C3774E00786B91 /* UI Components */,
+				E172BC8E22C0E79400B19726 /* ZAContactPickerViewController.h */,
+				E172BC8F22C0E79B00B19726 /* ZAContactPickerViewController.m */,
+			);
+			path = ZAPresentationLayer;
+			sourceTree = "<group>";
+		};
+		E19DCEB122D4B5440072B19C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E1E3043022D4E2960041D0AD /* ZAContactViewModel.h */,
+				E1E3043122D4E2960041D0AD /* ZAContactViewModel.m */,
+				E1E3043322D4EB400041D0AD /* ZAViewModelDictionary.h */,
+				E171C37522DB835900468308 /* ZAViewModelDictionary.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E1CB657522C376AC00786B91 /* TestUI */ = {
+			isa = PBXGroup;
+			children = (
+				E171C36B22DB125100468308 /* ZAFriendPicker1 */,
+				E172BC3E22C0D47400B19726 /* ZAFriendPicker2 */,
+				E1F9CB6A22C1DF300043626C /* Test Delete Contact */,
+				E115463F22BFAB22009FFFED /* Test Reusibility CollectionView */,
+			);
+			path = TestUI;
+			sourceTree = "<group>";
+		};
+		E1CB657622C3774E00786B91 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				E1E486A722BCC8F40035E045 /* ZATableView */,
+				E1E486A822BCC9040035E045 /* ZACollectionView */,
+				E1E4865022BCB51D0035E045 /* ZAPickerView */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		E1DD7F3822C48369008E4E85 /* ContactDTO */ = {
+			isa = PBXGroup;
+			children = (
+				E1E4865422BCBE2B0035E045 /* ContactDTO.h */,
+				E1E4865522BCBE360035E045 /* ContactDTO.m */,
+			);
+			path = ContactDTO;
+			sourceTree = "<group>";
+		};
+		E1DD7F3A22C484C2008E4E85 /* ZAFriendViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD7F3B22C484DA008E4E85 /* ZAFriendViewModel.h */,
+				E1DD7F3C22C484DA008E4E85 /* ZAFriendViewModel.m */,
+				E171C37222DB18A300468308 /* ZAFriendModel.h */,
+				E171C37322DB18A300468308 /* ZAFriendModel.m */,
+			);
+			path = ZAFriendViewModel;
+			sourceTree = "<group>";
+		};
+		E1E4861022BCB4F20035E045 = {
+			isa = PBXGroup;
+			children = (
+				E1E4861B22BCB4F20035E045 /* ZAContactPicker */,
+				E1E4863422BCB4F30035E045 /* ZAContactPickerTests */,
+				E1E4863F22BCB4F30035E045 /* ZAContactPickerUITests */,
+				E1E4861A22BCB4F20035E045 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1E4861A22BCB4F20035E045 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1E4861922BCB4F20035E045 /* ZAContactPicker.app */,
+				E1E4863122BCB4F30035E045 /* ZAContactPickerTests.xctest */,
+				E1E4863C22BCB4F30035E045 /* ZAContactPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1E4861B22BCB4F20035E045 /* ZAContactPicker */ = {
+			isa = PBXGroup;
+			children = (
+				E172BC8A22C0E50100B19726 /* ZAPresentationLayer */,
+				E1E4864F22BCB5150035E045 /* ZABusinessLayer */,
+				E1E4864E22BCB5060035E045 /* ZADataLayer */,
+				E1CB657522C376AC00786B91 /* TestUI */,
+				E1E4861F22BCB4F20035E045 /* ViewController.h */,
+				E1E4862022BCB4F20035E045 /* ViewController.m */,
+				E1E4861C22BCB4F20035E045 /* AppDelegate.h */,
+				E1E4861D22BCB4F20035E045 /* AppDelegate.m */,
+				E1E4862222BCB4F20035E045 /* Main.storyboard */,
+				E1E4862522BCB4F30035E045 /* Assets.xcassets */,
+				E1E4862722BCB4F30035E045 /* LaunchScreen.storyboard */,
+				E1E4862A22BCB4F30035E045 /* Info.plist */,
+				E1E4862B22BCB4F30035E045 /* main.m */,
+			);
+			path = ZAContactPicker;
+			sourceTree = "<group>";
+		};
+		E1E4863422BCB4F30035E045 /* ZAContactPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1E4863522BCB4F30035E045 /* ZAContactPickerTests.m */,
+				E1E4863722BCB4F30035E045 /* Info.plist */,
+			);
+			path = ZAContactPickerTests;
+			sourceTree = "<group>";
+		};
+		E1E4863F22BCB4F30035E045 /* ZAContactPickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E1E4864022BCB4F30035E045 /* ZAContactPickerUITests.m */,
+				E1E4864222BCB4F30035E045 /* Info.plist */,
+			);
+			path = ZAContactPickerUITests;
+			sourceTree = "<group>";
+		};
+		E1E4864E22BCB5060035E045 /* ZADataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD7F3822C48369008E4E85 /* ContactDTO */,
+				E1E4865122BCB5330035E045 /* ZAContactManager.h */,
+				E1E4865222BCB53E0035E045 /* ZAContactManager.m */,
+			);
+			path = ZADataLayer;
+			sourceTree = "<group>";
+		};
+		E1E4864F22BCB5150035E045 /* ZABusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E1EEC44322D1E54000D30B09 /* Business Entities */,
+				E1E4865822BCC1150035E045 /* ZAContactBusiness.h */,
+				E1E4865922BCC12B0035E045 /* ZAContactBusiness.m */,
+			);
+			path = ZABusinessLayer;
+			sourceTree = "<group>";
+		};
+		E1E4865022BCB51D0035E045 /* ZAPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				E1E486AA22BCC9360035E045 /* ZAPickerViewController.h */,
+				E1E486AB22BCC9420035E045 /* ZAPickerViewController.m */,
+				E1E486AD22BCC95E0035E045 /* ZAPickerView.xib */,
+			);
+			path = ZAPickerView;
+			sourceTree = "<group>";
+		};
+		E1E486A722BCC8F40035E045 /* ZATableView */ = {
+			isa = PBXGroup;
+			children = (
+				E1E486C822BCD9940035E045 /* Cell */,
+				E1E486C522BCD9830035E045 /* ZATableView.h */,
+				E1E486C622BCD98F0035E045 /* ZATableView.m */,
+			);
+			path = ZATableView;
+			sourceTree = "<group>";
+		};
+		E1E486A822BCC9040035E045 /* ZACollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				E1E486CC22BCDA2D0035E045 /* Cell */,
+				E1E486C922BCDA190035E045 /* ZACollectionView.h */,
+				E1E486CA22BCDA2A0035E045 /* ZACollectionView.m */,
+			);
+			path = ZACollectionView;
+			sourceTree = "<group>";
+		};
+		E1E486C822BCD9940035E045 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E1E486D222BCE33E0035E045 /* ZATableViewCell.h */,
+				E1E486D422BCE33E0035E045 /* ZATableViewCell.m */,
+				E1E486D322BCE33E0035E045 /* ZATableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E1E486CC22BCDA2D0035E045 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E1E486CE22BCDA5A0035E045 /* ZACollectionViewCell.h */,
+				E1E486CD22BCDA5A0035E045 /* ZACollectionViewCell.m */,
+				E1E486CF22BCDA5A0035E045 /* ZACollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E1EEC44322D1E54000D30B09 /* Business Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E1E4865D22BCC1C40035E045 /* ZAContactModel.h */,
+				E1E4865E22BCC1D10035E045 /* ZAContactModel.m */,
+			);
+			path = "Business Entities";
+			sourceTree = "<group>";
+		};
+		E1EEC44422D1E69600D30B09 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E1CB657222C3196600786B91 /* ZAModelImageCache.h */,
+				E1CB657322C3196600786B91 /* ZAModelImageCache.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E1F9CB6A22C1DF300043626C /* Test Delete Contact */ = {
+			isa = PBXGroup;
+			children = (
+				E1F9CB6B22C1EC250043626C /* ContactDeletionVC.h */,
+				E1F9CB6C22C1EC250043626C /* ContactDeletionVC.m */,
+			);
+			path = "Test Delete Contact";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1E4861822BCB4F20035E045 /* ZAContactPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E4864522BCB4F30035E045 /* Build configuration list for PBXNativeTarget "ZAContactPicker" */;
+			buildPhases = (
+				E1E4861522BCB4F20035E045 /* Sources */,
+				E1E4861622BCB4F20035E045 /* Frameworks */,
+				E1E4861722BCB4F20035E045 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZAContactPicker;
+			productName = ZAContactPicker;
+			productReference = E1E4861922BCB4F20035E045 /* ZAContactPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1E4863022BCB4F30035E045 /* ZAContactPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E4864822BCB4F30035E045 /* Build configuration list for PBXNativeTarget "ZAContactPickerTests" */;
+			buildPhases = (
+				E1E4862D22BCB4F30035E045 /* Sources */,
+				E1E4862E22BCB4F30035E045 /* Frameworks */,
+				E1E4862F22BCB4F30035E045 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1E4863322BCB4F30035E045 /* PBXTargetDependency */,
+			);
+			name = ZAContactPickerTests;
+			productName = ZAContactPickerTests;
+			productReference = E1E4863122BCB4F30035E045 /* ZAContactPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E1E4863B22BCB4F30035E045 /* ZAContactPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E4864B22BCB4F30035E045 /* Build configuration list for PBXNativeTarget "ZAContactPickerUITests" */;
+			buildPhases = (
+				E1E4863822BCB4F30035E045 /* Sources */,
+				E1E4863922BCB4F30035E045 /* Frameworks */,
+				E1E4863A22BCB4F30035E045 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1E4863E22BCB4F30035E045 /* PBXTargetDependency */,
+			);
+			name = ZAContactPickerUITests;
+			productName = ZAContactPickerUITests;
+			productReference = E1E4863C22BCB4F30035E045 /* ZAContactPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1E4861122BCB4F20035E045 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = vng;
+				TargetAttributes = {
+					E1E4861822BCB4F20035E045 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					E1E4863022BCB4F30035E045 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E1E4861822BCB4F20035E045;
+					};
+					E1E4863B22BCB4F30035E045 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E1E4861822BCB4F20035E045;
+					};
+				};
+			};
+			buildConfigurationList = E1E4861422BCB4F20035E045 /* Build configuration list for PBXProject "ZAContactPicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1E4861022BCB4F20035E045;
+			productRefGroup = E1E4861A22BCB4F20035E045 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1E4861822BCB4F20035E045 /* ZAContactPicker */,
+				E1E4863022BCB4F30035E045 /* ZAContactPickerTests */,
+				E1E4863B22BCB4F30035E045 /* ZAContactPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1E4861722BCB4F20035E045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E486D522BCE33E0035E045 /* ZATableViewCell.xib in Resources */,
+				E1E486D122BCDA5A0035E045 /* ZACollectionViewCell.xib in Resources */,
+				E1E4862922BCB4F30035E045 /* LaunchScreen.storyboard in Resources */,
+				E1E486AE22BCC95E0035E045 /* ZAPickerView.xib in Resources */,
+				E1E4862622BCB4F30035E045 /* Assets.xcassets in Resources */,
+				E1E4862422BCB4F20035E045 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E4862F22BCB4F30035E045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E4863A22BCB4F30035E045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1E4861522BCB4F20035E045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E486AC22BCC9420035E045 /* ZAPickerViewController.m in Sources */,
+				E1E3043222D4E2960041D0AD /* ZAContactViewModel.m in Sources */,
+				E172BC4122C0D49500B19726 /* ZAFriendPickerViewController.m in Sources */,
+				E1E486C722BCD98F0035E045 /* ZATableView.m in Sources */,
+				E1E4862122BCB4F20035E045 /* ViewController.m in Sources */,
+				E1E486CB22BCDA2A0035E045 /* ZACollectionView.m in Sources */,
+				E171C37122DB128B00468308 /* ZAFriendPickerVC.m in Sources */,
+				E1E4862C22BCB4F30035E045 /* main.m in Sources */,
+				E1E4861E22BCB4F20035E045 /* AppDelegate.m in Sources */,
+				E115464222BFAB5F009FFFED /* MyViewController.m in Sources */,
+				E1E4865A22BCC12B0035E045 /* ZAContactBusiness.m in Sources */,
+				E1F9CB6D22C1EC250043626C /* ContactDeletionVC.m in Sources */,
+				E171C37422DB18A300468308 /* ZAFriendModel.m in Sources */,
+				E1CB657422C3196600786B91 /* ZAModelImageCache.m in Sources */,
+				E1E4865322BCB53E0035E045 /* ZAContactManager.m in Sources */,
+				E1DD7F3D22C484DA008E4E85 /* ZAFriendViewModel.m in Sources */,
+				E1E486D022BCDA5A0035E045 /* ZACollectionViewCell.m in Sources */,
+				E1E4865622BCBE360035E045 /* ContactDTO.m in Sources */,
+				E1E4865F22BCC1D10035E045 /* ZAContactModel.m in Sources */,
+				E171C37622DB835900468308 /* ZAViewModelDictionary.m in Sources */,
+				E172BC9022C0E79B00B19726 /* ZAContactPickerViewController.m in Sources */,
+				E1E486D622BCE33E0035E045 /* ZATableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E4862D22BCB4F30035E045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E4863622BCB4F30035E045 /* ZAContactPickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E4863822BCB4F30035E045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E4864122BCB4F30035E045 /* ZAContactPickerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1E4863322BCB4F30035E045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1E4861822BCB4F20035E045 /* ZAContactPicker */;
+			targetProxy = E1E4863222BCB4F30035E045 /* PBXContainerItemProxy */;
+		};
+		E1E4863E22BCB4F30035E045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1E4861822BCB4F20035E045 /* ZAContactPicker */;
+			targetProxy = E1E4863D22BCB4F30035E045 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1E4862222BCB4F20035E045 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1E4862322BCB4F20035E045 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1E4862722BCB4F30035E045 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1E4862822BCB4F30035E045 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1E4864322BCB4F30035E045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E1E4864422BCB4F30035E045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1E4864622BCB4F30035E045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GSDWJHQ3A4;
+				INFOPLIST_FILE = ZAContactPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vng.ZAContactPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1E4864722BCB4F30035E045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GSDWJHQ3A4;
+				INFOPLIST_FILE = ZAContactPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vng.ZAContactPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1E4864922BCB4F30035E045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZAContactPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vng.ZAContactPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZAContactPicker.app/ZAContactPicker";
+			};
+			name = Debug;
+		};
+		E1E4864A22BCB4F30035E045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZAContactPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vng.ZAContactPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZAContactPicker.app/ZAContactPicker";
+			};
+			name = Release;
+		};
+		E1E4864C22BCB4F30035E045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZAContactPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vng.ZAContactPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZAContactPicker;
+			};
+			name = Debug;
+		};
+		E1E4864D22BCB4F30035E045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZAContactPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vng.ZAContactPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZAContactPicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1E4861422BCB4F20035E045 /* Build configuration list for PBXProject "ZAContactPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E4864322BCB4F30035E045 /* Debug */,
+				E1E4864422BCB4F30035E045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E4864522BCB4F30035E045 /* Build configuration list for PBXNativeTarget "ZAContactPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E4864622BCB4F30035E045 /* Debug */,
+				E1E4864722BCB4F30035E045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E4864822BCB4F30035E045 /* Build configuration list for PBXNativeTarget "ZAContactPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E4864922BCB4F30035E045 /* Debug */,
+				E1E4864A22BCB4F30035E045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E4864B22BCB4F30035E045 /* Build configuration list for PBXNativeTarget "ZAContactPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E4864C22BCB4F30035E045 /* Debug */,
+				E1E4864D22BCB4F30035E045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1E4861122BCB4F20035E045 /* Project object */;
+}
