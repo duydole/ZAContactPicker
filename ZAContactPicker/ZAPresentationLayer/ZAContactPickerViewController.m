@@ -12,6 +12,10 @@
 
 @implementation ZAContactPickerViewController
 
+- (void) feature2Implementation {
+    
+}
+
 - (void) viewDidLoad {
     [super viewDidLoad];
     [self setup];
