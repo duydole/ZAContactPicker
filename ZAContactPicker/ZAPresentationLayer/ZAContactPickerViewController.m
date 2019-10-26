@@ -64,6 +64,10 @@
     // I am feature1....
 }
 
+- (void) feature2 {
+    
+}
+
 # pragma mark - PickerView DataSource.
 - (ZAViewModelDictionary *) zaModelDictForPickerView:(ZAPickerViewController *)pickerViewController {
     return self.contactViewModelDict;
