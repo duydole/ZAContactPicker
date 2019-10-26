@@ -60,6 +60,10 @@
     } callbackBlockOn:dispatch_get_main_queue()];
 }
 
+- (void) feature1 {
+    // I am feature1....
+}
+
 # pragma mark - PickerView DataSource.
 - (ZAViewModelDictionary *) zaModelDictForPickerView:(ZAPickerViewController *)pickerViewController {
     return self.contactViewModelDict;
